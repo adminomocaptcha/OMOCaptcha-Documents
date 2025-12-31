@@ -98,8 +98,10 @@ Captcha thông thường là một hình ảnh có chứa văn bản bị bóp m
 ```json
 {
     "errorId": 1,
-    "errorCode": "",
-    "errorDescription": ""
+    "errorCode": "ERROR_JOB_STATUS",
+    "errorDescription": "Job failed",
+    "status": "fail",
+    "solution": {}
 }
 ```
 
