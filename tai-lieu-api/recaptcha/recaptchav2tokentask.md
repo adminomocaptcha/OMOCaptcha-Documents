@@ -105,8 +105,10 @@ reCAPTCHA-v2 còn được gọi là captcha TÔI KHÔNG PHẢI ROBOT, reCAPTCHA
 ```json
 {
     "errorId": 1,
-    "errorCode": "",
-    "errorDescription": ""
+    "errorCode": "ERROR_JOB_STATUS",
+    "errorDescription": "Job failed",
+    "status": "fail",
+    "solution": {}
 }
 ```
 

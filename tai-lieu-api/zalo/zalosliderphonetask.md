@@ -104,8 +104,10 @@ Kéo thả trên app là một loại hình ảnh xác thực phổ biến trôn
 ```json
 {
     "errorId": 1,
-    "errorCode": "",
-    "errorDescription": ""
+    "errorCode": "ERROR_JOB_STATUS",
+    "errorDescription": "Job failed",
+    "status": "fail",
+    "solution": {}
 }
 ```
 

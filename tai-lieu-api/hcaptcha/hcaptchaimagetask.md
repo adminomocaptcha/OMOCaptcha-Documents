@@ -120,8 +120,10 @@ Hoặc chỉ cần ảnh chụp màn hình (chứa cả hình captcha và câu h
 ```json
 {
     "errorId": 1,
-    "errorCode": "",
-    "errorDescription": ""
+    "errorCode": "ERROR_JOB_STATUS",
+    "errorDescription": "Job failed",
+    "status": "fail",
+    "solution": {}
 }
 ```
 
@@ -185,8 +187,10 @@ Hoặc chỉ cần ảnh chụp màn hình (chứa cả hình captcha và câu h
 ```json
 {
     "errorId": 1,
-    "errorCode": "",
-    "errorDescription": ""
+    "errorCode": "ERROR_JOB_STATUS",
+    "errorDescription": "Job failed",
+    "status": "fail",
+    "solution": {}
 }
 ```
 
@@ -266,8 +270,10 @@ Hoặc chỉ cần ảnh chụp màn hình (chứa cả hình captcha và câu h
 ```json
 {
     "errorId": 1,
-    "errorCode": "",
-    "errorDescription": ""
+    "errorCode": "ERROR_JOB_STATUS",
+    "errorDescription": "Job failed",
+    "status": "fail",
+    "solution": {}
 }
 ```
 

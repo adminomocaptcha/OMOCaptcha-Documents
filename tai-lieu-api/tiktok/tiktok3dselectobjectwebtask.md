@@ -106,8 +106,10 @@ Chon 2 đối tượng 3D trên web là một loại hình ảnh xác thực ph�
 ```json
 {
     "errorId": 1,
-    "errorCode": "",
-    "errorDescription": ""
+    "errorCode": "ERROR_JOB_STATUS",
+    "errorDescription": "Job failed",
+    "status": "fail",
+    "solution": {}
 }
 ```
 
