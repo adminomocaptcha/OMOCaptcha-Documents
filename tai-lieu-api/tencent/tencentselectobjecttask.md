@@ -2,7 +2,7 @@
 
 Captcha select object là một loại hình ảnh xác thực phổ biến trông giống như thế này
 
-<figure><img src="../../.gitbook/assets/geetest_select_object.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/cbimage (5).png" alt="" width="504"><figcaption></figcaption></figure>
 
 ## 1. Tạo yêu cầu
 
@@ -10,16 +10,16 @@ Captcha select object là một loại hình ảnh xác thực phổ biến trô
 
 <mark style="color:green;">**POST :**</mark> `https://api.omocaptcha.com/v2/createTask`
 
-<table><thead><tr><th width="226">Name</th><th width="99">Type</th><th width="112">Required</th><th>Description</th></tr></thead><tbody><tr><td>clientKey</td><td><mark style="color:blue;"><code>String</code></mark></td><td>yes</td><td>Khóa tài khoản khách hàng</td></tr><tr><td>task.type</td><td><mark style="color:blue;"><code>String</code></mark></td><td>yes</td><td>Tên class dịch vụ captcha cần giải</td></tr><tr><td>task.imageBase64</td><td><mark style="color:blue;"><code>String</code></mark></td><td>yes</td><td>Hình ảnh được mã hóa base64<br><img src="../../.gitbook/assets/image_captcha_geetest_select_object.png" alt=""></td></tr><tr><td>task.question</td><td><mark style="color:blue;"><code>String</code></mark></td><td>yes</td><td>Câu hỏi của captcha (ví dụ: Select 3 images with)</td></tr><tr><td>task.anchor</td><td><mark style="color:blue;"><code>String</code></mark></td><td>yes</td><td>Ảnh anchor (Ngay sau câu hỏi)<img src="../../.gitbook/assets/image.png" alt=""></td></tr></tbody></table>
+<table><thead><tr><th width="226">Name</th><th width="99">Type</th><th width="112">Required</th><th>Description</th></tr></thead><tbody><tr><td>clientKey</td><td><mark style="color:blue;"><code>String</code></mark></td><td>yes</td><td>Khóa tài khoản khách hàng</td></tr><tr><td>task.type</td><td><mark style="color:blue;"><code>String</code></mark></td><td>yes</td><td>Tên class dịch vụ captcha cần giải</td></tr><tr><td>task.imageBase64</td><td><mark style="color:blue;"><code>String</code></mark></td><td>yes</td><td>Hình ảnh được mã hóa base64<br><img src="../../.gitbook/assets/cbimage (5).png" alt=""></td></tr><tr><td>task.question</td><td><mark style="color:blue;"><code>String</code></mark></td><td>yes</td><td>Câu hỏi của captcha</td></tr><tr><td>task.anchor</td><td><mark style="color:blue;"><code>String</code></mark></td><td>yes</td><td>Ảnh anchor (Ngay sau câu hỏi)<img src="../../.gitbook/assets/image.png" alt=""></td></tr></tbody></table>
 
 ```json
 {
     "clientKey": "API_KEY",
     "task": {
-        "type": "GeetestSelectObjectTask",
-        "imageBase64": "BASE64_BODY_HERE",
-        "question": "Select...",
-        "anchor": "BASE64_ICON_HERE"
+        "type": "TencentSelectObjectTask",
+        "imageBase64": "BASE64_IMAGE_HERE",
+        "anchor": "BASE64_ANCHOR_HERE",
+        "question": "QUESTION_CAPTCHA"
     }
 }
 ```
@@ -76,9 +76,8 @@ Captcha select object là một loại hình ảnh xác thực phổ biến trô
     "status": "ready",
     "solution": {
         "objects": [
-            0,
-            1,
-            6
+            4,
+            5
         ]
     }
 }
