@@ -2,7 +2,7 @@
 
 Captcha select object là một loại hình ảnh xác thực phổ biến trông giống như thế này
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-01-10 113649.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenshot_1768020531.jpeg" alt=""><figcaption></figcaption></figure>
 
 ## 1. Tạo yêu cầu
 
