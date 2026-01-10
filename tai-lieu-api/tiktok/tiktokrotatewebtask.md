@@ -82,7 +82,66 @@ Xoay trên web là một loại hình ảnh xác thực phổ biến trông gi�
 
 * Máy chủ sẽ trả về <mark style="color:blue;">`errorId = 0`</mark> và <mark style="color:blue;">`status = ready`</mark>
 * Đọc kết quả trong <mark style="color:blue;">`solution`</mark>
-* Sử dụng kết quả trong solution: với ví dụ kết quả là 0.76 thì ta tính theo công thức (chiều dài thanh trượt - chiều dài nút) \* (1 - 0.76) thì sẽ ra số px để kéo nút
+*   Cách tính vị trí kéo Slider CAPTCHA như sau:
+
+    Nút kéo chỉ có thể di chuyển trong phạm vi bằng chiều dài thanh trượt trừ đi chiều dài của nút kéo. Hệ thống CAPTCHA không trả về giá trị pixel trực tiếp mà trả về một giá trị tỷ lệ gọi là solution, nằm trong khoảng từ 0 đến 1, biểu thị vị trí đúng của nút trên thanh trượt.
+
+    Để chuyển giá trị tỷ lệ này sang vị trí thực tế theo pixel, sử dụng công thức: (chiều dài thanh trượt − chiều dài nút kéo) × (1 − solution).
+* Kết quả của công thức là tọa độ X mục tiêu mà nút kéo cần đạt tới trên thanh trượt, không phải là quãng đường cần kéo thêm.
+*   Ví dụ, nếu thanh trượt dài 300px, nút kéo dài 40px thì quãng đường tối đa là 260px. Khi solution bằng 0.76, vị trí cần đạt tới sẽ là **260 × (1 − 0.76) = 62.4px**. Điều này có nghĩa là nút kéo cần nằm tại vị trí khoảng 62px trên thanh trượt để xác minh thành công.
+
+    Tóm lại, hệ thống sử dụng giá trị tỷ lệ để đảm bảo tính linh hoạt trên mọi kích thước giao diện, và việc chuyển đổi sang pixel giúp xác định chính xác vị trí kéo của nút.<br>
+
+```js
+// ===============================
+// MÃ MẪU TÍNH VỊ TRÍ KÉO SLIDER CAPTCHA
+// ===============================
+
+// Lấy nút kéo của slider
+const button = document.querySelector('.slider-button');
+
+if (!button) {
+  console.error('Không tìm thấy nút kéo');
+  return;
+}
+
+// Lấy thanh trượt (phần tử cha trực tiếp của nút)
+const track = button.parentElement;
+
+if (!track) {
+  console.error('Không tìm thấy thanh trượt');
+  return;
+}
+
+// Lấy chiều dài thanh trượt (px)
+const trackWidth = track.clientWidth;
+
+// Lấy chiều dài nút kéo (px)
+const buttonWidth = button.clientWidth;
+
+// Tính quãng đường tối đa nút kéo có thể di chuyển
+// (đảm bảo nút không vượt ra ngoài thanh trượt)
+const maxTranslateX = trackWidth - buttonWidth;
+
+// Giá trị solution do hệ thống CAPTCHA trả về
+// Là tỷ lệ vị trí (0 → 1), không phải pixel
+const solution = 0.76;
+
+// Chuyển tỷ lệ solution sang vị trí thực tế theo pixel
+// Công thức: (chiều dài thanh trượt − chiều dài nút) × (1 − solution)
+const targetX = maxTranslateX * (1 - solution);
+
+// Đặt nút kéo tại vị trí cần xác minh
+button.style.transform = `translateX(${targetX}px)`;
+
+// ===============================
+// GHI CHÚ:
+// - solution: tỷ lệ vị trí đúng
+// - targetX: tọa độ X mục tiêu của nút kéo
+// - Không phải quãng đường kéo thêm
+// ===============================
+
+```
 {% endtab %}
 
 {% tab title="Đang xử lý" %}
