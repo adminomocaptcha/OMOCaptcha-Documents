@@ -2,7 +2,7 @@
 
 Kéo thả trên web là một loại hình ảnh xác thực phổ biến trông giống như thế này
 
-<figure><img src="../../.gitbook/assets/cbimage (3).png" alt="" width="504"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenshot_17682090081.png" alt=""><figcaption></figcaption></figure>
 
 ## 1. Tạo yêu cầu
 
