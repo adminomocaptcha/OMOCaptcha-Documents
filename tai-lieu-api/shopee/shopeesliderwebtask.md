@@ -2,7 +2,7 @@
 
 Captcha Shopee là một loại hình ảnh xác thực phổ biến trông giống như thế này
 
-<div><figure><img src="../../.gitbook/assets/screenshot_1709696229.png" alt=""><figcaption><p>Captcha kéo thả shopee</p></figcaption></figure> <figure><img src="../../.gitbook/assets/captcha_shopee_2.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/screenshot_1709696229.png" alt=""><figcaption><p>Captcha kéo thả shopee</p></figcaption></figure> <figure><img src="../../.gitbook/assets/captcha_shopee_2.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/screenshot_17681927801.jpeg" alt="" width="367"><figcaption></figcaption></figure></div>
 
 ## 1a. Tạo yêu cầu (Dạng kéo thả thường)
 
