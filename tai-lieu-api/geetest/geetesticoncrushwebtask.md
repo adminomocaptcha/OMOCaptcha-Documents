@@ -2,7 +2,7 @@
 
 Captcha icon crush là một loại hình ảnh xác thực phổ biến trông giống như thế này
 
-<figure><img src="../../.gitbook/assets/captcha_geetest_icon_crush.png" alt=""><figcaption></figcaption></figure>
+<div><figure><img src="../../.gitbook/assets/captcha_geetest_icon_crush.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/photo_2026-01-16_14-17-332.jpg" alt=""><figcaption></figcaption></figure></div>
 
 ## 1. Tạo yêu cầu
 
