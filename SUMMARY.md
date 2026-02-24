@@ -61,3 +61,4 @@
 
 * [Cập nhật extension cho tool Max Tiktok Chrome](cap-nhat-extension-cho-tool-max-tiktok-chrome.md)
 * [Sử dụng App Id](su-dung-app-id.md)
+* [Page 1](page-1.md)
