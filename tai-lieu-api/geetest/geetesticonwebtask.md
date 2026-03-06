@@ -2,7 +2,7 @@
 
 Captcha click icon trên web là một loại hình ảnh xác thực phổ biến trông giống như thế này
 
-<div><figure><img src="../../.gitbook/assets/captcha_geetest_icon.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/photo_2026-02-27_17-18-072.jpg" alt="" width="283"><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/captcha_geetest_icon.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/photo_2026-02-27_17-18-072.jpg" alt=""><figcaption></figcaption></figure></div>
 
 ## 1. Tạo yêu cầu
 
