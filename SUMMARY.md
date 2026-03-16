@@ -54,6 +54,7 @@
 ## Hướng dẫn
 
 * [Cài extension từ file zip](huong-dan/cai-extension-tu-file-zip.md)
+* [Hướng dẫn sử dụng APK](huong-dan/huong-dan-su-dung-apk.md)
 * [Set API KEY cho extension](huong-dan/set-api-key-cho-extension.md)
 * [Cài extension tool Max Care và Max Hotmail](huong-dan/cai-extension-tool-max-care-va-max-hotmail.md)
 
@@ -61,4 +62,4 @@
 
 * [Cập nhật extension cho tool Max Tiktok Chrome](cap-nhat-extension-cho-tool-max-tiktok-chrome.md)
 * [Sử dụng App Id](su-dung-app-id.md)
-* [Page 1](page-1.md)
+* [Page 2](page-2.md)
