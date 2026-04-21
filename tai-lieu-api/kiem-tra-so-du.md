@@ -22,14 +22,14 @@
     "errorId": 0,
     "balance": 345.678,
     "quantity": 10000,
-    "promotionalBalance": 123.211
+    "voucher_balance": 123.211
 }
 ```
 
 * Máy chủ sẽ trả về <mark style="color:blue;">`errorId = 0`</mark>
 * <mark style="color:blue;">`balance`</mark> Số dư còn lại của tài khoản
 * <mark style="color:blue;">`quantity`</mark> Số lượt giải còn lại của gói
-* <mark style="color:blue;">`promotionalBalance`</mark> Số dư còn lại của tài khoản khuyến mại
+* <mark style="color:blue;">`voucher_balance`</mark>Số dư còn lại của tài khoản khuyến mại
 {% endtab %}
 
 {% tab title="Thất bại" %}
