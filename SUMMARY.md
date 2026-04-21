@@ -62,4 +62,4 @@
 
 * [Cập nhật extension cho tool Max Tiktok Chrome](cap-nhat-extension-cho-tool-max-tiktok-chrome.md)
 * [Sử dụng App Id](su-dung-app-id.md)
-* [Page 2](page-2.md)
+* [Lệnh ADB điều khiển APK](lenh-adb-dieu-khien-apk.md)
